@@ -19,7 +19,14 @@
 	        <link rel="stylesheet" href="assets/css/style.css">
 	        <link rel="stylesheet" href="assets/css/media-queries.css">
 
-	     
+	     	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	     	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	     	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	     	<link href='http://fonts.googleapis.com/css?family=Allan:bold' rel='stylesheet' type='text/css'>
+	     	<link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
+
+	     	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	     	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	        
 		        
 	        <link rel="shortcut icon" href="assets/ico/logo.png">
@@ -45,16 +52,76 @@
     		background: url(../assets/img/banner-bg.jpg) no-repeat center center;
     		background-size: cover;
 			}*/
-
-			@media (min-width: 100px)
-			.container {
-    		width: 1350px;
-			}
-
-			.section-description {
-    margin-top: 30px;
-    padding-bottom: 30px;
+ 
+  .bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
+
+
+ 
+
+		
+
+		/*for button*/
+
+
+
+
 
 	        </style>
 
@@ -67,11 +134,16 @@
 
 </script>
 
+		<script type="text/javascript">
+		$(".next").click(function() {
+   $('html,body').animate({ scrollTop:$(this).parent().next().offset().top}, 'slow');});
+		</script>
+		
 	
 	    </head>
 
 
-	    <body data-spy="scroll" data-target=".navbar" data-offset="50" style="font-family: 'Arvo' , sans-serif;">
+	    <body  data-spy="scroll" data-target=".navbar" data-offset="50" style="font-family: 'Arvo' , sans-serif;">
 
 
 	        <!-- Loader -->	
@@ -93,9 +165,9 @@
 						<a class="scroll-link" href="#top-content"><!-- Economics Association --></a>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="top-navbar-1">
+					<div class="collapse navbar-collapse" id="top-navbar-1" style="font-family: miso, sans-serif;">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a class="scroll-link" href="#about-us" ><strong>About Us</strong></a></li>
+							<li><a class="scroll-link" href="#about-us" ><strong>Team</strong></a></li>
 
 							<li><a class="scroll-link" href="#events">Atmos</a></li>
 							<li><a class="scroll-link" href="#blog">De-Economist</a></li>
@@ -118,6 +190,7 @@
     </li> -->
 
 							<li><a class="scroll-link" href="#PD">Panel Discussions</a></li>
+							<li><a href="projects.html">Projects</a></li>
 							<li><a class="scroll-link" href="#contactUs">Contact Us</a></li>
 						</ul>
 					</div>
@@ -132,18 +205,18 @@
 
 	                    <div class="row" >
 	                        <div class="col-sm-8 col-sm-offset-2 text">
-	                            <h1 class="wow fadeInLeftBig" ><strong>The Economics Association</strong></h1>
+	                            <h1 class="wow fadeInLeftBig" style="font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;" ><strong>The Economics Association</strong></h1>
 	                            <div class="description wow fadeInLeftBig" style="font-size: 22px; color: #FFFFFF">
-	                            	<p>
+	                            	<p style="font-family: 'Crimson Text', Georgia, Times, serif;opacity:5.2">
 		                 	<strong>     The Economics and Finance Department at BITS Pilani - Hyderabad Campus offers MSc (Hons) Economics as a first degree. Minor in Finance  and PhD programme. The diversity of specializations of the departmental faculty has promoted multi-faceted research at the Department and has brought a certain depth to the courses as well. </strong> 
 
-		                  	                            	</p>
+		                  	       	</p>
 
 	                            </div>
 
 	                            <hr class="intro-divider">
 	                            <br>
-	                            <h3 style="font-size:30px; color:white;"> Connect with us </h3>
+	                            <h3 style="font-size:30px; color:white; opacity: 1.0"> Connect with us </h3>
 
 	                            <div class="top-big-link wow fadeInUp">
 
@@ -166,18 +239,34 @@
 	                    </div>
 
 	                </div>
+	                <br><br>
+
+	                <div class="arrow bounce">
+	             <a href="#about-us" class="scroll-link" id="next" align="right">
+
+	             	<span class="glyphicon glyphicon-chevron-down" style="font-size: 32px;"></span></a>
+	             </div> 
+
+	                <!-- <a href="#about-us" class="scroll-link" id="next" align="right"><span class="glyphicon glyphicon-chevron-down"></span></a> 
+ -->
+
+	              
+
 	            </div>
+
+
+
 
 	        </div>
 
 
-
-	       <div class="about-us-container section-container">
-	        <div class="container">
+	    <!--  <div style="background: url(assets/img/au.jpg);   padding-left:0px" > -->
+	       <div class="about-us-container section-container" class="next" style="margin-top:0px;">
+	        <div class="container" style="margin-top:0px;">
 	            <div class="row">
 	                <div class="col-sm-12 about-us section-description wow fadeIn">
-	                    <h2><strong>Our Team</strong> </h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                    <h2 style="font-family: 'Molengo', Georgia, Times, serif; color: black;"><strong>Our Team</strong> </h2>
+	                    <!-- <div class="divider-1 wow fadeInUp"><span></span></div> -->
 	                </div>
 	            </div>
 	            <div class="row">
@@ -185,13 +274,13 @@
 		                <div class="about-us-photo">
 		                	<img src="assets/img/about/RS.jpg" alt="" data-at2x="assets/img/about/RS.jpg">
 		                </div>
-	                    <h3>Ronak Sisodia</h3>
+	                    <h3 style="opacity:1.0">Ronak Sisodia</h3>
 	                    <p>PRESIDENT</p>
-	                   <!--  <div class="about-us-social">
-		                	<a href="#"><i class="fa fa-facebook"></i></a>
-		                	<a href="#"><i class="fa fa-dribbble"></i></a>
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
-		                </div> -->
+	                    <div class="about-us-social">
+		                	<a href="https://www.facebook.com/Ronak.Sisodia07"><i class="fa fa-facebook"></i></a>
+		                	<a href="https://in.linkedin.com/in/ronak-sisodia-2a00a5a4"><i class="fa fa-linkedin"></i></a>
+		                    <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+		                </div>
 	                </div>
 	                <div class="col-sm-4 about-us-box wow fadeInDown">
 		                <div class="about-us-photo">
@@ -199,11 +288,11 @@
 		                </div>
 	                    <h3>Vaibhav Gupta</h3>
 	                    <p>SECRETARY</p>
-	                    <!-- <div class="about-us-social">
-		                	<a href="#"><i class="fa fa-facebook"></i></a>
-		                	<a href="#"><i class="fa fa-dribbble"></i></a>
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
-		                </div> -->
+	                    <div class="about-us-social">
+		                	<a href="https://www.facebook.com/vaibhavakaburger"><i class="fa fa-facebook"></i></a>
+		                	<a href="https://in.linkedin.com/in/vaibhavguptabitshyd"><i class="fa fa-linkedin"></i></a>
+		                    <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+		                </div>
 	                </div>
 
 	                 <div class="col-sm-4 about-us-box wow fadeInUp">
@@ -212,16 +301,57 @@
 		                </div>
 	                    <h3>Abhijeet Singh</h3>
 	                    <p>EVENT MANAGER</p>
-	                    <!-- <div class="about-us-social">
-		                	<a href="#"><i class="fa fa-facebook"></i></a>
-		                	<a href="#"><i class="fa fa-dribbble"></i></a>
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
-		                </div> -->
-	                </div>
-	            </div>
-	        </div>
-        
 
+	                    <div class="about-us-social">
+		                	<a href="https://www.facebook.com/abhijeet.tag"><i class="fa fa-facebook"></i></a>
+		                	<a href="https://in.linkedin.com/in/abhijeet-singh-940b6b119"><i class="fa fa-linkedin"></i></a>
+		                    <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+		                </div>
+		               
+	                </div><br>
+	               <br><br>
+	            </div>
+
+	            <div class="row">
+
+	            	<div class="col-sm-4 about-us-box wow fadeInUp">
+		               <!--  <div class="about-us-photo">
+		                	<img src="assets/img/about/RS.jpg" alt="" data-at2x="assets/img/about/RS.jpg">
+		                </div>
+	                    <h3 style="opacity:1.0">Ronak Sisodia</h3>
+	                    <p>PRESIDENT</p>
+	                    <div class="about-us-social">
+		                	<a href="https://www.facebook.com/Ronak.Sisodia07"><i class="fa fa-facebook"></i></a>
+		                	<a href="https://in.	linkedin.com/in/ronak-sisodia-2a00a5a4"><i class="fa fa-linkedin"></i></a>
+		                    <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+	                </div>
+	                
+	            	<div  class="col-sm-4 about-us-box wow fadeInUp">
+		                <div class="about-us-photo">
+		                	<img src="assets/img/about/sa.jpg" alt="" data-at2x="assets/img/about/sa.jpg" style="width:185px;height:170px;">
+		                </div>
+	                    <h3 style="opacity:1.0">SHIVAM AGRAWAL</h3>
+	                    <p>WEB DEVELOPER</p>
+	                    <div class="about-us-social">
+		                	<a href="https://www.facebook.com/shivam.agrawal.10297"><i class="fa fa-facebook"></i></a>
+		                	<a href="https://www.linkedin.com/in/shivam-agrawal-912b67124/"><i class="fa fa-linkedin"></i></a>
+		                    <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+		                </div>
+	                </div>
+	                
+
+	            </div>
+
+	              <br><br>
+	            <div class="arrow bounce">
+	             <a href="#events" class="scroll-link" id="next" align="right">
+
+	             	<span class="glyphicon glyphicon-chevron-down" style="font-size: 32px;"></span></a>
+	             </div> 
+	                <br><br>
+
+	        </div>
+     
 
 
 			<!-- Atmos -->
@@ -231,7 +361,7 @@
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 more-features section-description wow fadeIn">
-		                    <h2><strong>Events during Atmos</strong> </h2>
+		                    <h2 style="font-family: 'Molengo', Georgia, Times, serif;"><strong>Events during Atmos</strong> </h2>
 		                   <!--  <div class="divider-1 wow fadeInUp"><span></span></div> -->
 		                </div>
 		            </div>
@@ -294,6 +424,13 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <br><br> <br><br>
+
+	                <div class="arrow bounce">
+	             <a href="#blog" class="scroll-link" id="next" align="right">
+
+	             	<span class="glyphicon glyphicon-chevron-down" style="font-size: 32px;"></span></a>
+	             </div> 
 		            </div>
 		        </div>
 	        </div>
@@ -307,105 +444,135 @@
 
 
 
-	   
-	        <div class="blog-container section-container" style="margin-top:40px; padding-bottom:30px" >
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-12 great-support section-description wow fadeIn">
-		                    <h2><a href="https://ecobphc.wordpress.com/"><strong>De- Economist</strong></h2></a>
-		                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	      <div style="background: url(assets/img/blogb.jpg);  background-size: cover; padding-left:0px" >
+	        <div class="blog-container" style="margin-top:0px; padding-bottom:0px" >
+		        <div class="container" >
+		            <div class="row" style="padding-left:0px">
+		                <div class="col-sm-12 great-support section-description wow fadeIn" style="padding-left:0px">
+		                    <h2 style="font-family: 'Molengo', Georgia, Times, serif; color: #008080"><a href="https://ecobphc.wordpress.com/"><strong>De- Economist</strong></h2></a>
+		                    <!-- <div class="divider-1 wow fadeInUp"><span></span></div> -->
 		                </div>
 		            </div>
 		            <div class="row">
 		            	<div class="col-sm-7 great-support-box wow fadeInLeft">
-		                    <div class="great-support-box-text great-support-box-text-left">
-		                    	<h3>The Economics Blog</h3>
-		                    	<p class="medium-paragraph">
-		                    	De Economist offers insight and opinion on news, business and finance. You will find us discussing the seemingly complex terms and concepts, making them easy for everyone to understand.
+		                    <div class="great-support-box-text great-support-box-text-left" style="padding-left:30px;padding-top:15px;">
+		                    	<!-- <h3>The Economics Blog</h3> -->
+		                    	<p class="medium-paragraph" style="color: #FFFAFA; opacity:1.0">
+		                    	De Economist offers insight and opinion on news, business and finance. You will find us discussing the seemingly complex terms and concepts, making them easy for everyone to understand.We are a bunch of enthusiasts with an engineering background. None of us had any prior knowledge of economics. But once we started reading and understanding it; we realised that we can help others. <br><br>
 		                   	</p>
 		                    	<p>
 
 		                    	</p>
 		                    </div>
 		                </div>
-		                <div class="col-sm-5 great-support-box wow fadeInUp">
+		               <!--  <div class="col-sm-5 great-support-box wow fadeInUp">
 		                    <img src="assets/img/pc.jpg" alt="">
-		                </div>
+		                </div> -->
 		            </div>
 		        </div>
+		        <br><br>
+
+	                <div class="arrow bounce">
+	             <a href="#kpmg" class="scroll-link" id="next" align="right">
+
+	             	<span class="glyphicon glyphicon-chevron-down" style="font-size: 32px;"></span></a>
+	             </div> 
 	        </div>
-	  
+	  </div>
 
 	        <!-- Workshops -->
 
-
+	       <!-- <div style="background: url(assets/img/6s.png);  background-size: cover; padding-left:0px" > -->
 	         <div class="kpmg-container section-container section-container-gray-bg">
+	         
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 more-features section-description wow fadeIn">
-		                    <h2><strong>KPMG Six-Sigma Program</strong> </h2>
-		                    <div class="divider-1 wow fadeInUp"><span></span></div>
+		                    <h2 style="font-family: 'Molengo', Georgia, Times, serif;"><strong>KPMG Six-Sigma Program</strong> </h2>
+		                    <!-- <div class="divider-1 wow fadeInUp"><span></span></div> -->
 		                </div>
 		            </div>
 		            <div class="row">
 		            	<div class="col-sm-5 more-features-box wow fadeInLeft">
-		                    <img src="assets/img/6sigma.jpg" alt="">
+		                    <img src="assets/img/6sigma0.jpg" alt="" >
 		                </div>
-		                <div class="col-sm-7 more-features-box wow fadeInUp">
+		                <div class="col-sm-7 more-features-box wow fadeInUp" >
 
-		                    <div class="more-features-box-text">
+		                    <div class="more-features-box-text" >
 		                    	A four day programme that is recognised across the globe
 		Six Sigma methodology and Define-Measure-Analyse-Improve-Control approach
 	Importance and historical significance of Six Sigma methodology
 	Highlights the role of Green Belt and team work for successful implementation
 	Conceptual clarity regarding identification and prioritising various projects across areas
-	Six Sigma cycle to help derive solutions for a business problem using statistical tools and techniques
-	Project management techniques: how to present your project, project closure and key to successful transition
+	Six Sigma cycle to help derive solutions
+
 
 		                    </div>
 
 		                </div>
+		                
+			<!-- <a href="#baw" class="scroll-link" id="next" align="right"><div class="arrow bounce"></div></a>  -->
+
 		            </div>
+		           <!--  <a href="#baw" class="scroll-link" id="next" align="right"><div class="arrow bounce"></div></a> --> 
 		        </div>
+		        
+		        	<br><br>
+
+	                <div class="arrow bounce">
+	             <a href="#baw" class="scroll-link" id="next" align="right">
+
+	             	<span class="glyphicon glyphicon-chevron-down" style="font-size: 32px;"></span></a>
+	             </div> 
 	        </div>
-	
+			
 
 
-	   
+
+
+	<div style="background: url(assets/img/baw0.jpg);  <!-- background-size: cover;  --> padding-left:0px" >
 	         <div class="baw-container section-container">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 great-support section-description wow fadeIn">
-		                    <h2><a href="https://ecobphc.wordpress.com/"><strong>Business Analytics Workshop</strong></h2></a>
-		                    <div class="divider-1 wow fadeInUp"><span></span></div>
+		                    <h2 style="font-family: 'Molengo', Georgia, Times, serif;"><a href="https://ecobphc.wordpress.com/"><strong>Business Analytics Workshop</strong></h2></a>
+		                    <!-- <div class="divider-1 wow fadeInUp"><span></span></div> -->
 		                </div>
 		            </div>
 		            <div class="row">
 		            	<div class="col-sm-7 great-support-box wow fadeInLeft">
 		                    <div class="great-support-box-text great-support-box-text-left">
-		                    	<h3>Workshop</h3>
-		                    	<p class="medium-paragraph">
-		                    		A four day programme that is recognised across the globe
+		                    	<!-- <h3>Workshop</h3> -->
+		                    	<p class="medium-paragraph" style="color:white;opacity:1.0">
+		              <strong>      		A four day programme that is recognised across the globe
 		Six Sigma methodology and Define-Measure-Analyse-Improve-Control approach
 	Importance and historical significance of Six Sigma methodology
 	Highlights the role of Green Belt and team work for successful implementation
 	Conceptual clarity regarding identification and prioritising various projects across areas
 	Six Sigma cycle to help derive solutions for a business problem using statistical tools and techniques
-	Project management techniques: how to present your project, project closure and key to successful transition
+	 </strong>
 
 		                    	</p>
 		                    	<p>
 		                    			                    	</p>
 		                    </div>
 		                </div>
-		                <div class="col-sm-5 great-support-box wow fadeInUp">
-		                    <img src="assets/img/baw.jpg" alt="">
-		                </div>
+		               <!--  <div class="col-sm-5 great-support-box wow fadeInUp">
+		                    <img src="assets/img/baw2.jpg" alt="">
+		                </div> -->
 		            </div>
-		        </div>
-	        </div>
-	   
+		            <br><br>
 
+	                <div class="arrow bounce">
+	             <a href="#PD" class="scroll-link" id="next" align="right">
+
+	             	<span class="glyphicon glyphicon-chevron-down" style="font-size: 32px;"></span></a>
+	             </div> 
+		        </div>
+
+	        </div>
+	   </div>
+	</div>
 
 
 
@@ -414,7 +581,7 @@
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 more-features section-description wow fadeIn">
-		                    <h2><strong>Panel Discussions</strong> </h2>
+		                    <h2 style="font-family: 'Molengo', Georgia, Times, serif;"><strong>Panel Discussions</strong> </h2>
 		                    <!-- <div class="divider-1 wow fadeInUp"><span></span></div> -->
 		                </div>
 		            </div>
@@ -435,6 +602,16 @@
 
 		                </div>
 		            </div>
+
+		            <br><br>
+
+	                <div class="arrow bounce">
+	             <a href="#contactUs" class="scroll-link" id="next" align="right">
+
+	             	<span class="glyphicon glyphicon-chevron-down" style="font-size: 32px;"></span></a>
+	             </div> 
+
+		           <!--   <a href="#contactUs" class="scroll-link" id="next" align="right"><span class="glyphicon glyphicon-chevron-down"></span></a>  -->
 		        </div>
 	        </div>
 	  
@@ -462,8 +639,8 @@
                 </div>
                 <br>
                 <div class="col-lg-6" align="right">
-                <h2><strong>Contact Us:</strong></h2>
-                <h3><strong>Ronak Sisodia : 8096120425 </strong></h3>  <h3><strong>Vaibhav Gupta : 9912248864 </strong></h3> <h3> <a href="http://universe.bits-pilani.ac.in/hyderabad/sudatta/profile"><strong>Sudatta Banerjee </strong></a> : 040-66303625</strong></h3><br> 
+                <h2 style="color: #000000"><strong>Contact Us:</strong></h2>
+                <h3> <a href="https://www.facebook.com/Ronak.Sisodia07" style="color: #008080"><strong>Ronak Sisodia</a> : 8096120425 </strong></h3>  <h3> <a href="https://www.facebook.com/vaibhavakaburger" style="color: #008080"><strong>Vaibhav Gupta </a> : 9912248864 </strong></h3> <h3> <a href="http://universe.bits-pilani.ac.in/hyderabad/sudatta/profile" style="color: #008080"><strong>Sudatta Banerjee </strong></a> : 040-66303625</strong></h3><br> 
                 </div>               
 
         </div>
@@ -516,7 +693,7 @@
 		            </div>
 		            <div class="row">
 	                    <div class="col-sm-12 footer-copyright">
-	                    	&copy; Made by <a href="#">Shivam Agrawal</a>.
+	                    	&copy; Made by <a href="https://www.facebook.com/shivam.agrawal.10297">Shivam Agrawal</a>.
 	                    </div>
 	                </div>
 		        </div>
